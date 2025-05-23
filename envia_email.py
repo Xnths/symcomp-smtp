@@ -71,8 +71,7 @@ print("Enviando emails...")
 
 for idx, row in df_to_send.iterrows():
     empresa = row['NOME DA EMPRESA']
-    # emails = row['CONTATO']
-    emails = ['jonathascastilho@usp.br']
+    emails = row['CONTATO']
     for email in emails:
         html_personalizado = html_template.replace('{{NOME_EMPRESA}}', empresa)
         try:
