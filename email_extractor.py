@@ -5,7 +5,7 @@ csv_file_path = './src/patrocinadores_2025.csv'
 
 status_map = {
     'ENVIAR E-MAIL': 'waiting_send',
-    'EMAIL ENVIADO': 'sent'
+    'E-MAIL ENVIADO': 'sent'
 }
 
 def extrair_emails(texto):
