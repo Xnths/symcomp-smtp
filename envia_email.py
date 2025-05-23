@@ -22,14 +22,14 @@ def send_email(subject, html, to_email):
     part = MIMEText(html, 'html')
     message.attach(part)
 
-    fp = open('./src/header.png', 'rb')
+    fp = open('./src/header_2025.png', 'rb')
     imageHeader = MIMEImage(fp.read())
     fp.close()
 
     imageHeader.add_header('Content-ID', '<HeaderImage>')
     message.attach(imageHeader)
 
-    fp = open('./src/cotas.png', 'rb')
+    fp = open('./src/cotas_2025.png', 'rb')
     imageCotas = MIMEImage(fp.read())
     fp.close()
 
